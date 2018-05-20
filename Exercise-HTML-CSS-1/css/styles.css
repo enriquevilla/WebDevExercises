@@ -8,6 +8,8 @@ body {
 	animation: pulse 30s infinite;
 }
 
+
+
 @keyframes pulse {
 	0% {background:#ccdefc;}
 	33% {background:#24dce1;}
@@ -53,6 +55,12 @@ textarea {
 
 .row {
 	padding-bottom: 30px;
+}
+
+.img-contain {
+	position: relative;
+	top: 0;
+	left: 0;
 }
 
 .bg {
