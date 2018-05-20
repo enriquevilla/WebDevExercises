@@ -1,15 +1,3 @@
-* {
-	font-family: serif;
-}
-
-h1 {
-	font-family: serif;
-}
-
-h2 {
-	font-family: serif;
-}
-
 table, th, td {
     border: 1px solid black;
 }
@@ -28,22 +16,39 @@ body {
 }
 
 fieldset { 
-    display: block !important;
-    margin-left: 2px !important;
-    margin-right: 2px !important;
-    padding-top: 0.35em !important;
-    padding-bottom: 0.625em !important;
-    padding-left: 0.75em !important;
-    padding-right: 0.75em !important;
-    border: 2px groove !important;
-}
-
-select {
-	font-family: Times, sans-serif;
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 2px groove;
 }
 
 footer {
 	padding-top: 50px;
+}
+
+.gdiimg {
+	max-width: 100%;
+}
+
+.disc-our-locations {
+	list-style-type: disc;
+}
+
+.circle-our-locations {
+	text-indent: 25px;
+	list-style-type: circle;
+}
+
+footer {
+	padding-top: 50px;
+}
+
+textarea {
+	resize: none;
 }
 
 .row {
