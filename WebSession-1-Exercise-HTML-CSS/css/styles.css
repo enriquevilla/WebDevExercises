@@ -1,0 +1,269 @@
+/* Default */
+:root {
+  /* Variables */
+  --main-font: 'Raleway', sans-serif;
+  --title-font: 'Merriweather', sans-serif;
+  --regular-font-size: 16px;
+  --medium-font-size: 20px;
+  --big-font-size: 60px;
+  --gigant-font-size: 100px;
+  --accent-color: #ff4c3d;
+  --white: #fff;
+  --black: #494c4f;
+  --black-a: #494c4faa;
+  --black-trans: #494c4f11;
+  /* Mixins */
+  --button: {
+    background-color: var(--button-bg, var(--accent-color));
+    color: var(--button-bg, var(--white));
+    border-radius: 75px;
+  }
+}
+
+body {
+  font-family: var(--main-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--title-font);
+}
+
+/* Typography */
+
+.h1--big {
+  font-size: var(--big-font-size);
+}
+
+.h1--gigant {
+  font-size: var(--gigant-font-size);
+}
+
+.h1__shadow {
+  height: 100px;
+}
+
+.h1__front {
+  height: 100%;
+  padding-top: 33px;
+}
+
+.h1__back {
+  position: absolute;
+  top: 0;
+  text-align: center;
+  width: 100%;
+  color: var(--black-trans);
+  text-transform: uppercase;
+}
+
+.h1__back--recolor {
+  color: #ffffff33;
+}
+
+.h1--white {
+  color: #ffffff;
+}
+
+.h2--white {
+  color: #ffffff;
+}
+
+.h2--padding3 {
+  padding-left: 40px;
+}
+
+.h2--margin5 {
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+.h3 {
+  color: var(--black);
+  font-size: var(--medium-font-size);
+}
+
+.h3--underline {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.h3--underline::after {
+  content: '';
+  width: 120%;
+  height: 3px;
+  position: absolute;
+  left: -10%;
+  top: calc(100% + 10px);
+  background: var(--black-a);
+}
+
+.h4 {
+  font-size: var(--regular-font-size);
+  color: var(--accent-color);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.h4--white {
+  color: var(--white);
+}
+
+.h5 {
+  font-size: 14px;
+  color: var(--accent-color);
+  font-weight: 700;
+}
+
+.h6--padding3 {
+  padding-left: 10%;
+}
+
+.h6--recolor3 {
+  color: #ffffff88;
+}
+
+.p {
+  font-size: var(--regular-font-size);
+  color: var(--black-a);
+  line-height: 1.8;
+}
+
+.p--white {
+  color: #ffffff;
+}
+
+.ul--white {
+  color: #ffffff;
+}
+
+/* General */
+
+.container--small {
+  width: 600px;
+}
+
+.container--medium {
+  width: 900px;
+}
+
+.container-slide {
+  display: inline-flex;
+}
+
+.slide {
+  float: left;
+}
+
+.button-like {
+  background-color: var(--button-bg, var(--accent-color));
+  color: var(--button-color, var(--white));
+  border-radius: 75px;
+  text-transform: uppercase;
+  font-size: 10px;
+  padding: 15px 30px;
+  width: 50%;
+}
+
+.button-like--darkred {
+  background-color: #580000;
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.button-like--white {
+  --button-bg: transparent;
+  --button-color: var(--black);
+  border: 1px solid var(--black-a);
+  width: 50%;
+}
+
+.circle {
+  border-radius: 50%;
+  width: var(--circle-dim, 50px);
+  height: var(--circle-dim, 50px);
+}
+
+.line {
+  width: 3px;
+  height: 150px;
+  background-color: var(--line-bg, var(--accent-color));
+  margin: var(--line-height, 20px) auto;
+}
+
+/* Navbar styles */
+
+.navbar__logo {
+  max-height: 40px;
+}
+
+.navbar__link {
+  font-size: var(--regular-font-size);
+  color: var(--black);
+  margin: 0 10px;
+  padding: 15px 30px;
+}
+
+.navbar__link:focus,
+.navbar__link:active,
+.navbar__link:hover {
+  color: var(--accent-color);
+}
+
+.navbar__link--active {
+  background-color: var(--accent-color);
+  color: var(--white);
+  border-radius: 75px;
+  text-transform: uppercase;
+}
+
+.navbar__link--active:focus,
+.navbar__link--active:active,
+.navbar__link--active:hover {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.navbar__link--active-text {
+  font-size: 12px;
+}
+
+.container__img--width {
+  width: 100%
+}
+
+.video {
+  margin-top: 25%;
+  width: 400px;
+  height: 300px;
+}
+
+.fas.icon-white {
+  color: white;
+}
+
+.chevron-style {
+  padding-left: 75%;
+  padding-top: 125%;
+}
+
+.blank-underline4 {
+  border-top: 1px solid gray;
+  padding-left: 10%;
+}
+
+.button5 {
+  color: var(--accent-color);
+  text-decoration-color: var(--accent-color);
+  text-transform: uppercase;
+  border: 0px;
+  border-bottom: 2px solid var(--accent-color);
+}
+
+.input-text--style {
+  width: 40%;
+}
