@@ -4,11 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/script.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-  <link href="https://fonts.googleapis.com/css?family=Merriweather|Raleway" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
   <link rel="stylesheet" href="css/styles.css">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Eklos</title>
@@ -101,36 +102,70 @@
     </div>
     <br>
   </section>
-  <section class="section3">
-    <div class="row">
-      <div class="col-md-3"></div>
-      <div class="col-md-auto">
-        <div class="container container--small">
-          <h4 class="h4 h4--white text-center"><br>03 / Verticales</h4>
-          <div class="h1__shadow position-relative">
-            <div class="h1__front d-flex">
-              <h6 class="h6--padding3 h6--recolor3"><br>People</h6>
+  <section class="accent-section">
+    <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-2" data-slide-to="1"></li>
+        <li data-target="#carousel-example-2" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <div class="view">
+            <div class="d-block w-100 box carousel-background">
+              <div class="container container--small">
+                <h4 class="h4 h4--white text-center"><br>03 / Verticales</h4>
+                <div class="h1__shadow position-relative">
+                  <div class="h1__front d-flex">
+                    <h6 class="h6--padding3 h6--recolor3"><br>People</h6>
+                  </div>
+                  <h1 class="h1--gigant h1__back h1__back--recolor d-flex font-weight-bold justify-content-left">01</h1>
+                </div>
+                <h2 class="h2--white h2--padding3 font-weight-bold">Bring people together</h2>
+                <ul class="ul--white">
+                  <li>Internet de las cosas</li>
+                  <li>Soluciones que nos permitan entender y predecir el comportamiento de nuestros clientes y consumidores.</li>
+                  <li>Optimizaciones de portafolio para nuestros clientes (puntos de venta).</li>
+                </ul>
+                <br><br>
+              </div>
             </div>
-            <h1 class="h1--gigant h1__back h1__back--recolor d-flex font-weight-bold justify-content-left">01</h1>
+            <div class="mask rgba-black-light"></div>
           </div>
-          <h2 class="h2--white h2--padding3 font-weight-bold">Bring people together</h2>
-          <ul class="ul--white">
-            <li>Internet de las cosas</li>
-            <li>Soluciones que nos permitan entender y predecir el comportamiento de nuestros clientes y consumidores.</li>
-            <li>Optimizaciones de portafolio para nuestros clientes (puntos de venta).</li>
-          </ul>
-          <br>
+        </div>
+        <div class="carousel-item">
+          <div class="view">
+            <div class="d-block w-100 box-1 carousel-background">
+              <div class="container container--small justify-content-center">
+                <img src="https://pbs.twimg.com/profile_images/738831705440681984/F4gRBvzm_400x400.jpg" class="carousel-img">
+              </div>
+            </div>
+            <div class="mask rgba-black-strong"></div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="view">
+            <div class="d-block w-100 box-1 carousel-background">
+              <div class="container container--small justify-content-center">
+                <img src="https://i2.wp.com/beerbartender.gr/wp-content/uploads/2015/07/ABI_ST_4C.gif?resize=900%2C600" class="carousel-img">
+              </div>
+            </div>
+            <div class="mask rgba-black-slight"></div>
+          </div>
         </div>
       </div>
-      <div class="col-md-auto">
-        <i class="fas fa-chevron-right chevron-style icon-white fa-5x"></i>
-      </div>
+      <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
-    <div class="row">
-
   </section>
-  <br><br><br>
   <section>
+    <div class="clear"></div><br><br><br>
     <h4 class="h4 text-center">05 / Eventos</h4>
     <br><br><br><br><br>
     <div class="container">
@@ -192,7 +227,7 @@
     </div>
   </section>
   <br><br><br><br><br>
-  <section class="section3">
+  <section class="accent-section">
     <div class="container container--small">
       <h4 class="h4 h4--white text-center"><br>06 / Inscripción</h4>
       <h1 class="h1--big h1--white text font-weight-bold text-center">Big projects start with big dreams</h1>
@@ -205,5 +240,6 @@
       </form>
     </div>
   </section>
+
 </body>
 </html>
